@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭保单管理工具</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">🏠 家庭保单管理</h1>
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="#" data-page="dashboard" class="nav-link active">仪表板</a></li>
+                        <li><a href="#" data-page="members" class="nav-link">家庭成员</a></li>
+                        <li><a href="#" data-page="policies" class="nav-link">保单管理</a></li>
+                        <li><a href="#" data-page="matching" class="nav-link">问题匹配</a></li>
+                        <li><a href="#" data-page="chat" class="nav-link">AI助手</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div id="content">
+                    <!-- 页面内容将通过JavaScript动态加载 -->
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>正在加载...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 家庭保单管理工具. 保护您的家庭，管理您的保障。</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 通知组件 -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <span class="notification-message"></span>
+            <button class="notification-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
